@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nombres.Views.Resultado"
+             Title="Ejercicio 1.2">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="10">
+            <Label Text="{Binding Nombre, StringFormat='Nombre: {0}'}"
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   TextColor="#6495ED"
+                HorizontalOptions="CenterAndExpand" 
+                   x:Name="LblNombre"/>
+            <Label Text="{Binding Apellido, StringFormat='Apellidos: {0}'}"
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   TextColor="#6495ED"
+                HorizontalOptions="CenterAndExpand" 
+                   x:Name="LblApellido"/>
+            <Label Text="{Binding Edad, StringFormat='Edad: {0}'}"
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   TextColor="#6495ED"
+                HorizontalOptions="CenterAndExpand" 
+                   x:Name="LblEdad"/>
+            <Label Text="{Binding Correo, StringFormat='Correo: {0}'}"
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   TextColor="#6495ED"
+                HorizontalOptions="CenterAndExpand" 
+                   x:Name="LblCorreo"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
